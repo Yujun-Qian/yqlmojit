@@ -1,0 +1,62 @@
+[
+  {
+    "settings": [ "master" ],
+    "specs": {
+      "frame": {
+        "type": "HTMLFrameMojit",
+        "config": {
+          "deploy": true,
+          "title": "yqlmojit App",
+          "child": {
+            "type": "top_frame"
+          },
+          "assets": {
+            "top": {
+              "css": [
+                "/static/top_frame/assets/index.css"
+              ]
+             }
+           }
+        }
+      }
+    }
+  },
+    {
+        "settings":["build:debug"],
+        "yui":{
+            "config":{
+                "seed":["/yahoo.libs.yui/yui-base/yui-base-min.js",
+                "/yahoo.libs.yui/loader-base/loader-base-min.js",
+                "loader-yui3-resolved{langPath}",
+                "loader-app",
+                "loader-app-resolved{langPath}"],
+                "base":"/yahoo.libs.yui/",
+                "combine":false,
+                "root":"",
+                "groups":{
+                    "app":{
+                        "combine":false,
+                        "base":"//yahoo.com",
+                        "root":""
+                    }
+                }
+            }
+        }
+    },
+    {
+        "settings":["IDE:debug"],
+        "yui":{
+            "config":{
+                "combine":true,
+                "base":"",
+                "groups":{
+                    "app":{
+                        "combine":false,
+                        "base":"",
+                        "root":""
+                    }
+                }
+            }
+        }
+    }
+]

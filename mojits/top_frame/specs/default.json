@@ -1,0 +1,17 @@
+[
+    {
+        "settings": [ "master" ]
+    },
+
+    {
+        "settings": ["build:debug"],
+
+        "config": {
+            "assets": {
+                "bottom": {
+                    "js": ["//yahoo.com/yahoo.crt.lib/yui-cfg.js"]
+                }
+            }
+        }
+    }
+]
